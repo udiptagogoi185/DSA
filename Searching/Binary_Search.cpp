@@ -4,8 +4,11 @@ using namespace std;
 int binary(int* arr, int low, int high, int element){
     int mid;
     while(low <= high){
+
         mid = low + (high - low)/2;
+
         if(arr[mid] == element){
+
             return mid;
         }
         if(arr[mid] < element){
